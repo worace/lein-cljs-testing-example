@@ -36,3 +36,9 @@ __Test Display__
 
 Currently test output is just displayed in the JS dev console. Maybe
 will add some HTML display at some point.
+
+### Credit
+
+Thanks to @bhauman for figwheel! Most of the ideas in this example were
+cobbled together from his [crashverse](https://github.com/bhauman/crashverse) example
+or from various figwheel readmes I found.
