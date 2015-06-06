@@ -1,6 +1,5 @@
 (ns ^:figwheel-always hello-world.core
-    (:require
-              [reagent.core :as reagent :refer [atom]]))
+    (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
 

@@ -41,13 +41,7 @@
                          :main hello_world.test-runner
                          :asset-path "js/compiled/test/out"
                          :source-map true
-                         :cache-analysis true }}
-             {:id "min"
-              :source-paths ["src"]
-              :compiler {:output-to "resources/public/js/compiled/hello_world.js"
-                         :main hello-world.core
-                         :optimizations :advanced
-                         :pretty-print false}}]}
+                         :cache-analysis true }}]}
 
   :figwheel {
              ;; :http-server-root "public" ;; default and assumes "resources" 
