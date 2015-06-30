@@ -10,3 +10,15 @@
 
 (deftest test-lul
   (is (= 1 1)))
+
+(deftest test-fifth
+  (is (= 1 1)))
+
+(deftest test-third
+  (is (= 1 1)))
+
+(deftest test-fourth
+  (is (= 1 1)))
+
+(deftest test-six
+  (is (= 1 1)))

@@ -37,6 +37,20 @@ __Test Display__
 Currently test output is just displayed in the JS dev console. Maybe
 will add some HTML display at some point.
 
+__Getting Correct Test Auto-Building__
+
+I have been struggling a lot with getting correct behavior from the test auto-builder.
+I would like to have the tests run automatically in the browser via figwheel's notification infrastructure
+whenever a file is saved.
+
+But running the standard test build with `lein figwheel test` seems to produce
+inconsistent behavior -- new changes to test files are not usually picked up.
+
+At the moment, I've found that I need to _also_ run `cljsbuild auto test` as a way
+of ensuring that test files get re-compiled on every save. This combo is a bit frustrating
+since you need to have 2 build processes going at any time, but it's the only thing I've
+been able to get working very consistently so far.
+
 ### Credit
 
 Thanks to @bhauman for figwheel! Most of the ideas in this example were
