@@ -1,4 +1,4 @@
-(ns hello-world.core-test
+(ns ^:figwheel-always hello-world.core-test
   (:require
     [cljs.test :refer-macros [deftest testing is]]
     [hello-world.core :as hw]))
@@ -8,17 +8,16 @@
 (deftest test-pizza
   (is (= "pizza" "pizza")))
 
-(deftest test-lul
+(deftest test-four
   (is (= 1 1)))
 
-(deftest test-fifth
+(deftest test-five
   (is (= 1 1)))
 
-(deftest test-third
+(deftest test-tacos
   (is (= 1 1)))
 
-(deftest test-fourth
-  (is (= 1 1)))
-
-(deftest test-six
-  (is (= 1 1)))
+(defn run-tests []
+  (.clear js/console)
+  (cljs.test/run-all-tests #"hello-world.*-test"))
+(run-tests)
