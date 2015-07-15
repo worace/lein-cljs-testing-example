@@ -38,7 +38,7 @@
               :compiler {:output-to "resources/public/js/compiled/test/test.js"
                          :output-dir "resources/public/js/compiled/test/out"
                          :optimizations :none
-                         :main hello_world.test-runner
+                         :main hello-world.core-test
                          :asset-path "js/compiled/test/out"
                          :source-map true
                          :cache-analysis true }}]}

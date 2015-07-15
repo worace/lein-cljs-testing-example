@@ -3,6 +3,7 @@
     [cljs.test :refer-macros [deftest testing is]]
     [hello-world.test-formatter :as formatter]
     [figwheel.client :as fw]
+    [hello-world.test-helpers :as th]
     [hello-world.core :as hw]))
 
 (enable-console-print!)
@@ -18,6 +19,9 @@
 
 (deftest test-tacos
   (is (= 1 1)))
+
+(deftest test-hello-world
+  (is (th/found-in #"Hello" (th/by-id "app"))))
 
 (defn run-tests []
   (.clear js/console)
